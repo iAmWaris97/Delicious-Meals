@@ -56,3 +56,20 @@ header {
   height: 25px;
   width: 25px;
 }
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  border: 1px solid brown;
+  width: 70vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  margin-top: 50px;
+}
+
+.footer-text {
+  margin-left: 50px;
+  font-weight: 500;
+  margin-top: 15px;
+}

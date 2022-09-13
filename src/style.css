@@ -1,3 +1,58 @@
-body {
-  background-color: aqua;
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.header-title {
+  font-style: oblique;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.img-logo {
+  height: 100px;
+  width: 100px;
+}
+
+.logo-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  column-gap: 60px;
+}
+
+.nav {
+  margin-right: 100px;
+}
+
+.links {
+  list-style-type: none;
+}
+
+/* serve yourself link */
+.link {
+  text-decoration: none;
+  color: brown;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.list {
+  display: flex;
+  column-gap: 15px;
+}
+
+.bell {
+  height: 25px;
+  width: 25px;
 }

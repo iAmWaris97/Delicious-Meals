@@ -20,7 +20,10 @@
   },
   "homepage": "https://github.com/MarcoOquendoC/Webpack#readme",
   "devDependencies": {
+    "@babel/core": "^7.19.0",
+    "@babel/preset-env": "^7.19.0",
     "babel-eslint": "^10.1.0",
+    "babel-jest": "^29.0.3",
     "css-loader": "^6.7.1",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",

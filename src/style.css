@@ -5,6 +5,10 @@
   margin: 0;
 }
 
+body {
+  background-color: #d3d3d3;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -108,10 +112,16 @@ header {
   cursor: pointer;
 }
 
+.search-btn:active {
+  transform: scale(0.9);
+  background-color: brown;
+}
+
 /* footer */
 .footer {
+  background-color: white;
   position: fixed;
-  bottom: 0;
+  bottom: 10px;
   height: 60px;
   border: 1px solid brown;
   border-radius: 40px;
@@ -126,4 +136,12 @@ header {
   margin-left: 50px;
   font-weight: 500;
   margin-top: 15px;
+}
+
+/* Cards from JavaScript */
+
+/* cards sections */
+.meals {
+  display: grid;
+  grid-template-columns: auto auto auto;
 }

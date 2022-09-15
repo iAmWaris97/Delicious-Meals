@@ -155,7 +155,7 @@ header {
   min-height: 500px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 400px;
+  padding-bottom: 300px;
 }
 
 .parent-div {
@@ -260,4 +260,38 @@ header {
 .comment:active {
   background-color: brown;
   transform: scale(0.95);
+}
+
+/* showing 1 meal by search */
+.parent-div-1meal {
+  width: 450px;
+  height: auto;
+  background-color: white;
+  border-radius: 0 50px;
+  box-shadow: 10px 30px 20px grey;
+}
+
+.meals1 {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  min-height: 500px;
+  padding-bottom: 200px;
+}
+
+.video {
+  padding: 10px 30px;
+  background-color: brown;
+  font-size: 25px;
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border-radius: 30px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  margin-top: -20px;
+  transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
 }

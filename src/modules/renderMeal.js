@@ -60,16 +60,22 @@ const manageData = async () => {
 /* manageData(); */
 
 /* for render 1 meal from searh */
+const meals = document.querySelector('.meals');
 const loadFromApiIngridients = (meal) => {
-  const meals = document.querySelector('.meals');
   meals.innerHTML = '';
 
   for (let i = 0; i < meal.length; i += 1) {
     // Parent div.
     const meals1 = document.getElementById('meals');
-    meals1.classList.add('meals1');
+    if (meal.length < 3) {
+      meals1.classList.add('meals1');
+    }
     const divParent = document.createElement('div');
-    divParent.classList.add('parent-div-1meal');
+    if (meal.length < 3) {
+      divParent.classList.add('parent-div-1meal');
+    } else {
+      divParent.classList.add('parent-div');
+    }
     meals1.appendChild(divParent);
     // Div picture.
     const picDiv = document.createElement('div');

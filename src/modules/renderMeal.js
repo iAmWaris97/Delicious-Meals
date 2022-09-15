@@ -28,17 +28,17 @@ const loadFromApi = (topNine) => {
     // Heand thumbs up to press to have the like
     const thumbsUp = document.createElement('span');
     thumbsUp.classList.add('thumbs');
-    thumbsUp.textContent = '👍';
+    thumbsUp.textContent = '❤️';
     divLikes.appendChild(thumbsUp);
     // Count of likes
     const likesCount = document.createElement('p');
     likesCount.classList.add('likes');
-    likesCount.textContent = 'X likes';
+    likesCount.textContent = '3 likes';
     divLikes.appendChild(likesCount);
     // Categorie Name
     const categories = document.createElement('p');
     categories.classList.add('categories');
-    categories.textContent = `Categorie of Meal: ${topNine[i].strCategory}`;
+    categories.textContent = `Do you like ${topNine[i].strCategory}?`;
     footCard.appendChild(categories);
     // Comment button.
     const comment = document.createElement('a');
@@ -51,11 +51,10 @@ const loadFromApi = (topNine) => {
 const manageData = async () => {
   const data = await api.getMealList();
   const x = [...data];
-
   // to randomize or shuffle it the original array before do the slice.
   /* x.sort(() => 0.5 - Math.random()); */
-
   const topNine = x.slice(0, 9);
+  console.log(topNine);
   loadFromApi(topNine);
 };
 /* manageData(); */

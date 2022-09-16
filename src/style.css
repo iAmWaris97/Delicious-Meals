@@ -12,35 +12,39 @@
 }
 
 body {
-  background-color: #d3d3d3;
+  background-color: #FFFAE7;
 }
 
 header {
   display: flex;
   justify-content: space-between;
-  width: 70vw;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
+  width: 100vw;
+  padding: 5px 0;
   align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  max-height: max-content;
+  box-sizing: border-box;
 }
 
 .header-title {
-  font-style: oblique;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .img-logo {
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  width: 50px;
 }
 
 .logo-div {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  column-gap: 60px;
+  gap: 30px;
+  margin-left: 80px;
 }
 
 .nav {
@@ -69,77 +73,22 @@ header {
   width: 25px;
 }
 
-/* search */
-.meal-search-box {
-  margin-top: 10px;
-  margin-bottom: 60px;
-  display: flex;
-  align-items: stretch;
-  width: 500px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.search-control {
-  width: inherit;
-  padding: 0 1rem;
-  font-size: 1.4rem;
-  font-family: inherit;
-  outline: 0;
-  border: 1px solid brown;
-  color: brown;
-  border-top-left-radius: 2rem;
-  border-bottom-left-radius: 2rem;
-}
-
-.search-control::placeholder {
-  color: grey;
-}
-
-.search-btn {
-  margin-right: auto;
-  width: 80px;
-  height: 55px;
-  padding-right: 10px;
-  font-size: 1.6rem;
-  background: brown;
-  color: #fff;
-  border: none;
-  border-top-right-radius: 2rem;
-  border-bottom-right-radius: 2rem;
-  transition: all 0.4s linear;
-  -webkit-transition: all 0.4s linear;
-  -moz-transition: all 0.4s linear;
-  -ms-transition: all 0.4s linear;
-  -o-transition: all 0.4s linear;
-}
-
-.search-btn:hover {
-  background: rgb(124, 38, 38);
-  cursor: pointer;
-}
-
-.search-btn:active {
-  transform: scale(0.9);
-  background-color: brown;
-}
-
 /* footer */
 .footer {
-  background-color: white;
+  background-color: #fff;
   position: fixed;
-  bottom: 30px;
-  height: 60px;
-  border: 1px solid brown;
-  border-radius: 40px;
-  width: 70vw;
-  margin-left: 15vw;
-  margin-right: 15vw;
-  margin-top: 50px;
+  bottom: 0;
+  height: 50px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  box-sizing: border-box;
+  padding: 10px 0;
 }
 
 .footer-text {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   margin-left: 50px;
   font-weight: 500;
   margin-top: 15px;
@@ -162,6 +111,7 @@ header {
 .parent-div {
   width: auto;
   height: auto;
+  margin-top: 100px;
   background-color: white;
   border-radius: 0 50px;
   box-shadow: 10px 30px 20px grey;
@@ -170,6 +120,7 @@ header {
 .parent-div:hover {
   transform: scale(1.005);
   box-shadow: 20px 40px 20px rgb(51, 50, 50);
+  z-index: -1;
 }
 
 .pic-div {

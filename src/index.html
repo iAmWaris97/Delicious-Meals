@@ -26,11 +26,38 @@
         </ul>
       </nav>
     </header>
+
     <main>
       <section>
         <div id="meals" class="meals"></div>
       </section>
+
+      <section class="popup-container hidden">
+        <div class="popup-window">
+            <div class="close-btn">
+              <i id="close" class="fas fa-times-circle"></i>
+            </div>
+            <div class="popup-image">
+                <img src="./assets/logo-transparent.png" alt="popup-image">
+            </div>
+            <div class="item-info">
+                <h3 class="dish-name"></h3>
+                <p class="recipe"></p>
+            </div>
+            <div class="comments-container">
+                <h4></h4>
+                <div class="comment-content">
+                    <ul class="comments-generator"></ul>
+                </div>
+                <span id="comments-spinner" class="spinner"></span>
+            </div>
+            <div class="add-comment">
+            </div>
+        </div>
+    </section>
+
     </main>
+
     <footer class="footer">
       <p class="footer-text">Developed with <i class="fab fa-gratipay"></i> by Gustavo and Waris<strong> &copy;</strong></p>
     </footer>

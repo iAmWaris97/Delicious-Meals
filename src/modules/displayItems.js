@@ -1,3 +1,5 @@
+import displayPopup from './popupWindow.js';
+
 const recipeCards = document.querySelector('.meals');
 
 const displayCards = async () => {
@@ -20,6 +22,7 @@ const displayCards = async () => {
              </div>`;
         recipeCards.innerHTML = html;
       });
+      displayPopup();
     });
 };
 

@@ -1,4 +1,5 @@
 import displayPopup from './popupWindow.js';
+import { getLikes, likeInteract } from './newLike.js';
 
 const recipeCards = document.querySelector('.meals');
 
@@ -23,6 +24,8 @@ const displayCards = async () => {
         recipeCards.innerHTML = html;
       });
       displayPopup();
+      getLikes();
+      likeInteract();
     });
 };
 

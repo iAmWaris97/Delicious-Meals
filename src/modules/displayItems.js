@@ -1,7 +1,9 @@
 import displayPopup from './popupWindow.js';
 import { getLikes, likeInteract } from './newLike.js';
+import itemsCounter from './itemCounter.js';
 
 const recipeCards = document.querySelector('.meals');
+const recipeCount = document.querySelector('.header-title');
 
 const displayCards = async () => {
   fetch('https://www.themealdb.com/api/json/v1/1/filter.php?c=seafood')
@@ -26,6 +28,7 @@ const displayCards = async () => {
       displayPopup();
       getLikes();
       likeInteract();
+      itemsCounter(data.meals, recipeCount);
     });
 };
 

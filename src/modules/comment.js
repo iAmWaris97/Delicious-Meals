@@ -1,3 +1,5 @@
+import commentCount from './commentCount.js';
+
 const url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/';
 const key = 'GMNp8Iw0vFnGN6Z04zFg';
 
@@ -8,6 +10,7 @@ const fetchComments = async (id) => {
   await fetch(`${url}${key}/comments?item_id=${id}`)
     .then((reponse) => reponse.json())
     .then((json) => {
+      commentCount(json, commentsHeader);
       const commentsList = document.querySelector('.comments-generator');
       commentsList.innerHTML = '';
       // eslint-disable-next-line array-callback-return

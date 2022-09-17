@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meal Mentor</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  <script defer src="main.js"></script></head>
+  <body>
+    <header>
+      <div class="logo-div">
+        <a href="index.html"
+          ><img
+            class="img-logo"
+            src="6a03dc518f31219125d5.png"
+            alt="meals"
+        /></a>
+        <h1 class="header-title">Meal Mentor</h1>
+      </div>
+      <h2 class="title-recipe">Recipes</h2>
+      <nav class="nav">
+        <ul class="list">
+          <li><a class="serve" href="#">Recipes @ your pocket</a></li>
+          <a href=""
+            ><img
+              class="bell"
+              src="5d22946e6b41450e21a0.svg"
+              alt="#"
+          /></a>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div id="meals" class="meals"></div>
+      </section>
+
+      <section class="popup-container hidden">
+        <div class="popup-window">
+          <div class="close">
+            <i id="close-btn" class="fas fa-times-circle"></i>
+          </div>
+          <div class="popup-image">
+            <img src="6a03dc518f31219125d5.png" alt="popup-image" />
+          </div>
+          <div class="meal-info">
+            <h3 class="meal-name"></h3>
+            <p class="meal-recipe"></p>
+          </div>
+          <div class="comments-container">
+            <h4></h4>
+            <div class="comment-content">
+              <ul class="comments-generator"></ul>
+            </div>
+            <span id="comments-spinner" class="spinner"></span>
+          </div>
+          <div class="add-comment"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer-text">
+        Developed with <i class="fab fa-gratipay"></i> by Gustavo and
+        Waris<strong> &copy;</strong>
+      </p>
+    </footer>
+  </body>
+</html>

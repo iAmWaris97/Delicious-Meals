@@ -2,6 +2,11 @@
 
 # JavaScript group capstone: Meal Mentor
 
+> In this capstone project, my teammate "Gustavo" and I made an app called as "Meal Mentor".
+> The App is fetching the meals and reipies from the API and displays on the screen in form of the cards.
+> The cards has the like and comment options as well, and on click of the comments button it will display the reicipe and the comments.
+> We also practiced testing this app using the jest package.
+
 ![Project Screenshot](./snapshot.PNG "Meal Mentor")
 
 ## Built With
@@ -15,8 +20,6 @@
 - **Jest**
 
 [Live Demo Link (if available)](https://iamwaris97.github.io/Delicious-Meals/dist/)
-
-[Video of developers describing the project](https://drive.google.com/file/d/1FQ4QcZHNoPSAWWaeBLWg4hwFL-93Ic8U/view?usp=sharing)
 
 ## Getting Started
 

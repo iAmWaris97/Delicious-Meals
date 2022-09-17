@@ -1,3 +1,5 @@
+import { postComment, fetchComments } from './comment.js';
+
 const popupContainer = document.querySelector('.popup-container');
 const popupImg = document.querySelector('.popup-image img');
 const mealName = document.querySelector('.meal-name');
@@ -16,6 +18,15 @@ const createForm = (id) => {
           <input class='new-comment' name='comment' type="text" placeholder="Your comment..." required>
           <input class="btn" name='comment-button' type="submit" value="Comment">`;
   formContainer.appendChild(form);
+  const name = document.querySelector('.name');
+  const comment = document.querySelector('.new-comment');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (name.value && comment.value) {
+      postComment(name.value, comment.value, form.id);
+      form.reset();
+    }
+  });
 };
 
 const popup = () => {
@@ -24,6 +35,7 @@ const popup = () => {
   commentBtns.forEach((button) => {
     button.addEventListener('click', () => {
       createForm(button.id);
+      fetchComments(button.id);
       fetch(`${url}${button.id}`)
         .then((response) => response.json())
         .then((elem) => {

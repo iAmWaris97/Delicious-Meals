@@ -1,9 +1,6 @@
 import './style.css';
-import displayCards from './modules/displayItems.js';
-
-const recipes = document.querySelector('#meals');
+import displayMeals from './modules/displayMelas.js';
 
 window.addEventListener('DOMContentLoaded', () => {
-  displayCards();
-  recipes.classList.remove('hidden');
+  displayMeals();
 });

@@ -3,20 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meals App</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Meal Mentor</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
       <div class="logo-div">
         <a href="index.html"
-          ><img class="img-logo" src="./assets/logo-transparent.png" alt="meals"
+          ><img
+            class="img-logo"
+            src="./assets/logo-transparent.png"
+            alt="meals"
         /></a>
-        <h1 class="header-title">Meals App</h1>
+        <h1 class="header-title">Meal Mentor</h1>
       </div>
+      <h2 class="title-recipe">Recipes</h2>
       <nav class="nav">
         <ul class="list">
-          <li class="links"><a class="link" href="#">Serve Yourself</a></li>
+          <li><a class="serve" href="#">Recipes @ your pocket</a></li>
           <a href=""
             ><img
               class="bell"
@@ -34,32 +44,33 @@
 
       <section class="popup-container hidden">
         <div class="popup-window">
-            <div class="close-btn">
-              <i id="close" class="fas fa-times-circle"></i>
+          <div class="close">
+            <i id="close-btn" class="fas fa-times-circle"></i>
+          </div>
+          <div class="popup-image">
+            <img src="./assets/logo-transparent.png" alt="popup-image" />
+          </div>
+          <div class="meal-info">
+            <h3 class="meal-name"></h3>
+            <p class="meal-recipe"></p>
+          </div>
+          <div class="comments-container">
+            <h4></h4>
+            <div class="comment-content">
+              <ul class="comments-generator"></ul>
             </div>
-            <div class="popup-image">
-                <img src="./assets/logo-transparent.png" alt="popup-image">
-            </div>
-            <div class="item-info">
-                <h3 class="dish-name"></h3>
-                <p class="recipe"></p>
-            </div>
-            <div class="comments-container">
-                <h4></h4>
-                <div class="comment-content">
-                    <ul class="comments-generator"></ul>
-                </div>
-                <span id="comments-spinner" class="spinner"></span>
-            </div>
-            <div class="add-comment">
-            </div>
+            <span id="comments-spinner" class="spinner"></span>
+          </div>
+          <div class="add-comment"></div>
         </div>
-    </section>
-
+      </section>
     </main>
 
     <footer class="footer">
-      <p class="footer-text">Developed with <i class="fab fa-gratipay"></i> by Gustavo and Waris<strong> &copy;</strong></p>
+      <p class="footer-text">
+        Developed with <i class="fab fa-gratipay"></i> by Gustavo and
+        Waris<strong> &copy;</strong>
+      </p>
     </footer>
   </body>
 </html>

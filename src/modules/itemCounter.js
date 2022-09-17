@@ -1,6 +1,6 @@
-const itemsCounter = (data, link) => {
-  link.innerHTML = `Meals App(${data.length})`;
+const mealsCounter = (data, link) => {
+  link.innerHTML = `Recipes (${data.length})`;
   return data.length;
 };
 
-export default itemsCounter;
+export default mealsCounter;

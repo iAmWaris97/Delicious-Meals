@@ -1,24 +1,24 @@
 const url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/GMNp8Iw0vFnGN6Z04zFg/likes';
-const getLikes = async () => {
-  const cards = document.querySelectorAll('.parent-div');
+const fetchLikes = async () => {
+  const meal = document.querySelectorAll('.meal');
   const likeCount = document.querySelectorAll('.like-count');
   await fetch(url)
     .then((response) => response.json())
     .then((json) => {
-      cards.forEach((card, index) => {
+      meal.forEach((meal, index) => {
         json.forEach((item) => {
-          if (item.item_id === card.id) {
+          if (item.item_id === meal.id) {
             likeCount[index].innerHTML = item.likes;
           }
         });
       });
     });
 };
-const likeInteract = async () => {
+const likeAtction = async () => {
   const likeBtns = document.querySelectorAll('.like-btn');
   const likeBtnIcon = document.querySelectorAll('.fa-heart');
   const likeBtnCount = document.querySelectorAll('.like-count');
-  const cards = document.querySelectorAll('.parent-div');
+  const meal = document.querySelectorAll('.meal');
   likeBtns.forEach((btn, index) => {
     btn.addEventListener('click', () => {
       likeBtnIcon[index].classList.remove('far');
@@ -27,7 +27,7 @@ const likeInteract = async () => {
       fetch(url, {
         method: 'POST',
         body: JSON.stringify({
-          item_id: cards[index].id,
+          item_id: meal[index].id,
         }),
         headers: {
           'Content-type': 'application/json; charset=UTF-8',
@@ -36,4 +36,4 @@ const likeInteract = async () => {
     });
   });
 };
-export { getLikes, likeInteract };
+export { fetchLikes, likeAtction };
